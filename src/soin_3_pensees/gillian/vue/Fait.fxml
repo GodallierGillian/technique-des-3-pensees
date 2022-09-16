@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #993366;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soin_3_pensees.gillian.controller.Fait">
+   <children>
+      <AnchorPane prefHeight="664.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: #663399;">
+               <children>
+                  <Button fx:id="boutonRetour" layoutX="4.0" layoutY="-1.0" mnemonicParsing="false" onAction="#lireListe" prefHeight="44.0" prefWidth="52.0" style="-fx-background-color: #663399;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" focusTraversable="true" iconName="ARROW_LEFT" size="3em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <GridPane layoutX="22.0" layoutY="46.0" prefHeight="344.0" prefWidth="542.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="56.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="380.0" minWidth="10.0" prefWidth="380.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Date :" textFill="WHITE" GridPane.halignment="RIGHT">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Emotions au Passé :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Emotions au Présent :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Forces de Caractere :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Fait :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" text="Label" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fait" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emotionPasse" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emotionPresent" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="forceCaractere" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

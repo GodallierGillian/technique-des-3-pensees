@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #993366;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soin_3_pensees.gillian.controller.CreerSouvenir">
+   <children>
+      <AnchorPane prefHeight="664.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: #663399;">
+               <children>
+                  <Button fx:id="boutonRetour" layoutX="4.0" layoutY="-1.0" mnemonicParsing="false" onAction="#retourAccueil" prefHeight="44.0" prefWidth="52.0" style="-fx-background-color: #663399;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" focusTraversable="true" iconName="ARROW_LEFT" size="3em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <ScrollPane layoutY="44.0" prefHeight="398.0" prefWidth="600.0" style="-fx-background-color: #993366;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1050.0" prefWidth="589.0" style="-fx-background-color: #993366;">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" iconName="PENCIL" layoutX="110.0" layoutY="93.0" size="3em" text="" />
+                        <GridPane layoutX="125.0" layoutY="172.0" prefHeight="89.0" prefWidth="332.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="163.0" />
+                            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="98.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="satisfactionCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Satisfaction" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="accomplissementCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="155.0" text="Accomplissement" textFill="WHITE" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="fierteCheck" mnemonicParsing="false" text="Fierté" textFill="WHITE" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="sereniteCheck" contentDisplay="RIGHT" mnemonicParsing="false" text="Sérénité" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="gratitudeCheck" mnemonicParsing="false" text="Gratitude" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </GridPane>
+                        <TextField fx:id="faitField" layoutX="153.0" layoutY="66.0" prefHeight="25.0" prefWidth="283.0" />
+                        <Label layoutX="201.0" layoutY="32.0" text="Description du fait" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Label layoutX="160.0" layoutY="142.0" text="Émotions positives au Passé" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="128.0" layoutY="313.0" prefHeight="169.0" prefWidth="412.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="210.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="202.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="amourCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Amour" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="plaisirCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Plaisir" textFill="WHITE" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="curiositeCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Curiosité" textFill="WHITE" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="espoirCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Espoir" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="amusementCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Amusement" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="inspirationCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Inspiration" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="interetCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Intérêt" textFill="WHITE" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="ouvertureCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Ouverture" textFill="WHITE" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="creativiteCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Créativité" textFill="WHITE" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="calmeCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Calme" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="admirationCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Admiration" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="joieCheck" mnemonicParsing="false" prefHeight="21.0" prefWidth="130.0" text="Joie" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="151.0" layoutY="282.0" text="Émotions positives au Présent" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="43.0" layoutY="579.0" prefHeight="372.0" prefWidth="499.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="152.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="175.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="172.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Sagesse" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="creativiteFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Créativité" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="curiositeFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Curiosité" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="jugementFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Jugement" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="amourApprendreFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="L'amour d'apprendre" textFill="WHITE" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="perspectiveFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Perspective" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <Label text="Courage" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Humanité" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Justice" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Tempérance" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Transcendance" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="bravoureFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Bravoure" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="honneteteFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Honnêteté" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="vitaliteFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Vitalité" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="perseveranceFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Persévérance" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="gentillesseFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Gentillesse" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="intelligenceSocialeFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Intelligence sociale" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="justiceFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Justice" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="pardonFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Pardon" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="amourFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Amour" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="travailEquipeFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Travail d'équipe" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="managerFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Manager" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="prudenceFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Prudence" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="humiliteFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Humilité" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="autoregulationFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Autorégulation" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="beauteEtExcellenceFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Beauté &amp; Excellence" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="spiritualiteFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Spiritualité" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="espoirFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Espoir" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="joieFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Joie" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="reconnaissanceFcCheck" mnemonicParsing="false" onMouseClicked="#afficherContexte" text="Reconnaissance" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="192.0" layoutY="531.0" text="Mes valeurs d'action" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="boutonSauvegarder" layoutX="241.0" layoutY="966.0" mnemonicParsing="false" onAction="#sauvegarder" style="-fx-background-color: #663399; -fx-border-color: #FFFFFF;" text="Sauvegarder" textFill="WHITE" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

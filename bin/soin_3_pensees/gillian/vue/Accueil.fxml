@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #993366;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soin_3_pensees.gillian.controller.Accueil">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="boutonCreer" layoutX="74.0" layoutY="149.0" mnemonicParsing="false" onAction="#creerJour" prefHeight="177.0" prefWidth="172.0" style="-fx-border-color: #663399; -fx-background-radius: 25; -fx-border-radius: 20; -fx-border-width: 10; -fx-background-color: #FFFFFF;">
+               <graphic>
+                  <FontAwesomeIcon fx:id="iconeCreer" disable="true" fill="#663399" focusTraversable="true" iconName="PENCIL" size="10em" />
+               </graphic>
+            </Button>
+            <Button fx:id="boutonListe" layoutX="354.0" layoutY="150.0" mnemonicParsing="false" onAction="#lireListe" prefHeight="177.0" prefWidth="172.0" style="-fx-border-color: #663399; -fx-background-radius: 25; -fx-border-radius: 20; -fx-border-width: 10; -fx-background-color: #FFFFFF;">
+               <graphic>
+                  <FontAwesomeIcon fx:id="iconeListe" disable="true" fill="#663399" focusTraversable="true" iconName="LIST" selectionFill="#a10606" size="9em" />
+               </graphic>
+            </Button>
+            <Label layoutX="190.0" layoutY="88.0" text="Que souhaitez vous faire ?" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="50.0" text="Bonjour" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="335.0" text="Ajouter un fait" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="364.0" layoutY="335.0" text="Consulter les faits" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      </children>
+</AnchorPane>
